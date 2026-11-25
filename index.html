@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinta & Tela | Playeras personalizadas</title>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">Tinta & Tela ✿</div>
+    <div>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#personaliza">Personaliza</a>
+      <a href="#scrum">Scrum</a>
+      <a href="#equipo">Equipo</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="hero" id="inicio">
+    <h1>Tu estilo, <span>tu diseño</span></h1>
+    <p>En Tinta & Tela transformamos tus ideas en playeras únicas. Personaliza tu prenda con colores, diseños y detalles que expresen tu personalidad.</p>
+    <p>Puedes solicitar mas informacion en unestro instagram: tint.tela</p>
+    <a class="btn" href="#personaliza">¡Personaliza la tuya!</a>
+  </div>
+
+  <section id="productos">
+    <h2>Nuestras playeras</h2>
+    <p class="sub">Elige tu prenda y conviértela en algo único.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="shirt-art">
+          <img src="nakano.jpg" width="150px" alt="Playera clásica personalizada">
+        </div>
+        <div class="card-content">
+          <h3>Grabado mediano</h3>
+          <div class="price">$200 MXN</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shirt-art">
+          <img src="tensei.jpg" width="150px" alt="Playera de color personalizada">
+        </div>
+        <div class="card-content">
+          <h3>Grabado chico</h3>
+          <div class="price">$150 MXN</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shirt-art">
+          <img src="goku.jpg" width="150px" alt="Playera con diseño especial">
+        </div>
+        <div class="card-content">
+          <h3>Grabado completo</h3>
+          <div class="price"> $250 MXN</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="personaliza">
+    <h2>Personaliza tu playera</h2>
+    <p class="sub">Completa los datos para describir tu pedido.</p>
+    <div class="custom">
+      <form id="orderForm">
+        <label for="color">Color</label>
+        <select id="color" required>
+          <option value="">Selecciona un color</option><option>Blanco</option><option>Negro</option><option>Rosa</option><option>Azul</option><option>Otro</option>
+        </select>
+        <label for="talla">Talla</label>
+        <select id="talla" required>
+          <option value="">Selecciona una talla</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
+        </select>
+        <label for="diseno">Describe tu diseño</label>
+        <textarea id="diseno" placeholder="Escribe aquí qué imagen, texto o idea quieres en tu playera..." required></textarea>
+        <label for="cantidad">Cantidad</label>
+        <input id="cantidad" type="number" min="1" value="1" required>
+        <button class="btn" type="submit">Enviar solicitud</button>
+      </form>
+      <p id="formMessage" role="status"></p>
+    </div>
+  </section>
+
+  <section id="scrum">
+    <div class="scrum">
+      <h2>Metodología Scrum</h2>
+      <p class="sub">Organizamos el desarrollo de nuestro emprendimiento mediante trabajo colaborativo y actividades por etapas.</p>
+      <div class="scrum-grid">
+        <article class="scrum-item"><h3>Planificación</h3><p>Definimos la idea, las tareas, los objetivos y las necesidades del proyecto.</p></article>
+        <article class="scrum-item"><h3>Sprint</h3><p>Trabajamos en periodos cortos para desarrollar y mejorar cada parte del proyecto.</p></article>
+        <article class="scrum-item"><h3>Revisión</h3><p>Revisamos los avances, escuchamos comentarios y comprobamos los resultados.</p></article>
+        <article class="scrum-item"><h3>Mejora</h3><p>Identificamos cambios necesarios y ajustamos nuestro trabajo para el siguiente ciclo.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipo">
+    <h2>Integrantes del equipo</h2>
+    <p class="sub">Este proyecto fue desarrollado de manera colaborativa.</p>
+    <div class="team">
+      <div class="member">Núñez Pérez</div>
+      <div class="member">Osornio Cruz</div>
+      <div class="member">Llamas Resendiz</div>
+      <div class="member">Medina León</div>
+      <div class="member">Mexicano Martinez</div>
+      <div class="member">Romero Isidro</div>
+    </div>
+  </section>
+</main>
+<footer>
+  <p><strong>Tinta & Tela</strong></p>
+  <p>Playeras personalizadas con creatividad.</p>
+  <p>© 2026 Tinta & Tela</p>
+</footer>
+<script src="Script.js"></script>
+</body>
+</html>

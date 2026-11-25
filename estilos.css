@@ -1,0 +1,42 @@
+
+    :root{
+      --pink:#e76ba7; --pink-light:#fff0f7; --ink:#292633;
+      --muted:#6d6875; --white:#fff; --line:#f1d6e5;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fffafc}
+    header{background:white;position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line)}
+    nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:16px 22px;gap:16px}
+    .logo{font-size:1.35rem;font-weight:800;color:var(--pink)}
+    nav a{color:var(--ink);text-decoration:none;font-weight:600;margin-left:16px}
+    nav a:hover{color:var(--pink)}
+    .hero{padding:70px 22px;background:linear-gradient(135deg,#ffe6f2,#fff7fb);text-align:center}
+    .hero h1{font-size:clamp(2.2rem,6vw,4rem);margin:0 0 14px}
+    .hero h1 span{color:var(--pink)}
+    .hero p{max-width:650px;margin:0 auto 24px;color:var(--muted);line-height:1.6}
+    .btn{display:inline-block;background:var(--pink);color:white;padding:12px 22px;border-radius:25px;text-decoration:none;border:none;font-weight:700;cursor:pointer}
+    section{max-width:1100px;margin:auto;padding:55px 22px}
+    section h2{text-align:center;font-size:2rem;margin:0 0 12px}
+    .sub{text-align:center;color:var(--muted);margin:0 auto 32px;max-width:650px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+    .card{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #3320330a}
+    .shirt-art{height:220px;background:var(--pink-light);display:grid;place-items:center}
+    .shirt-art svg{width:155px;height:165px}
+    .card-content{padding:20px}
+    .card-content h3{margin:0 0 8px}
+    .card-content p{color:var(--muted);line-height:1.5}
+    .price{font-weight:800;color:var(--pink);font-size:1.15rem}
+    .custom{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;max-width:760px;margin:auto}
+    label{display:block;font-weight:700;margin:14px 0 7px}
+    input,select,textarea{width:100%;padding:12px;border:1px solid #e6d6df;border-radius:10px;font:inherit;background:white}
+    textarea{min-height:100px;resize:vertical}
+    .custom .btn{margin-top:18px}
+    .scrum{background:var(--pink-light);border-radius:22px;padding:30px}
+    .scrum-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+    .scrum-item{background:white;border-radius:15px;padding:20px}
+    .scrum-item h3{color:var(--pink);margin-top:0}
+    .team{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+    .member{background:white;border:1px solid var(--line);padding:13px 18px;border-radius:25px}
+    footer{background:#292633;color:white;text-align:center;padding:25px}
+    footer p{margin:6px}
+    @media(max-width:650px){nav{flex-direction:column}nav a{margin:0 8px}.hero{padding:50px 18px}}
